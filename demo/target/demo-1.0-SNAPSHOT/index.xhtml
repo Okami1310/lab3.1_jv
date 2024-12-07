@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<head>
+    <title>Exponential Calculator</title>
+</head>
+<body>
+<h1>Function calculation e^(-x)</h1>
+
+<h:form>
+    <h:outputLabel for="x" value="Enter x: "/>
+    <h:inputText id="x" value="#{calculatorBean.x}" required="true"/><br/>
+
+    <h:outputLabel for="n" value="Enter n: "/>
+    <h:inputText id="n" value="#{calculatorBean.n}" required="true"/><br/>
+
+    <h:outputLabel for="e1" value="Enter e1: "/>
+    <h:inputText id="e1" value="#{calculatorBean.e1}" required="true"/><br/>
+
+    <h:outputLabel for="e2" value="Enter e2: "/>
+    <h:inputText id="e2" value="#{calculatorBean.e2}" required="true"/><br/>
+
+    <h:commandButton value="Calculate" action="#{calculatorBean.calculate}"/>
+</h:form>
+</body>
+</html>

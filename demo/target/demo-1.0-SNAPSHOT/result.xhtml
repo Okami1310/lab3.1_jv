@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<head>
+    <title>Calculation Results</title>
+</head>
+<body>
+<h1>Calculation Results</h1>
+
+<p>Sum n terms: #{calculatorBean.sumN}</p>
+<p>Sum terms (abs(term) > e1): #{calculatorBean.sumE1}</p>
+<p>Sum terms (abs(term) > e2): #{calculatorBean.sumE2}</p>
+<p>Exact value: #{calculatorBean.exact}</p>
+
+<h:link value="Back" outcome="index"/>
+</body>
+</html>
